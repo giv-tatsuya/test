@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+</head>
+
+<body>
+	<script>
+	function spr1(a){
+		alert(a + "の２乗時は" + a*a +　"です。");
+	}
+	function spr2(a){
+		return a + "の２乗時は" + a*a +　"です。";
+	}
+	document.write(spr2(2)+"<br>");
+	document.write(spr2(5)+"<br>");
+	document.write(spr2(123)+"<br>");
+	</script>
+	
+	<button type="button" onclick="spr(2)">spr1</button>
+	<button type="button" onclick="spr(5)">spr2</button>
+	<button type="button" onclick="spr(123)">spr3</button>
+</body>
+</html>

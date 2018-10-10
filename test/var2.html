@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+</head>
+
+<body>
+<script>
+	var n;
+
+	n = 1;
+	document.write(n+"<br>");//結果は１
+	
+	n = n +2;
+	document.write( n + "<br>");//結果は２
+	
+	n++;
+	document.write( n +"<br>");//結果は４
+	
+	const TEISU = 1;
+	document.write( TEISU + "<br>");//結果は１
+	//定数の中身を入れ替えてみる
+	TEISU = 2;
+	document.write(TEISU);//結果は１のはずだがmブラウザによっては２
+	
+/*chomeではエラーが返り24行目以降は読み込まない
+	safariではエラーもなく定数として１が返る*/
+	
+</script>
+
+</body>
+</html>
